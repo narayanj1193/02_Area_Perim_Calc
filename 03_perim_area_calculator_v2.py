@@ -40,7 +40,7 @@ while keep_going == "":
     perimeter = 2 * (width + height) 
 
     # Output the area and perimeter to 2 decimal places. 
-    # Use the code ":.xf" where :x" is the number of decimal points you require
+    # Use the code ":.xf" where "x" is the number of decimal points you require
     print()
     print("The area of your shape is {:.2f} square units". format(area))
     print("The perimeter of your shape is {:.2f}". format(perimeter))
