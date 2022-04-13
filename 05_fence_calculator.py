@@ -30,7 +30,7 @@ def num_check(question):
 
 # Introduction / Heading print statements
 print()
-print("***** Fence Cost Calculator *****")
+print("***** Welcome to the Fence Cost Calculator *****")
 print()
 
 # Start of calculator loop
@@ -44,11 +44,11 @@ while keep_going == "":
     cost_per_m = num_check ("Price per metre: $")
 
 
-    # Calulate perimeter (width + height) x 2
+    # Calulate perimeter (width + length) x 2
     perimeter = (width + length) * 2
     
     # Calculate the cost of the fencing (perimeter x price / meter)
-    cost = perimeter * cost_per_m
+    cost_of_fencing = perimeter * cost_per_m
 
     # Output the perimeter and cost of the fencing
     
@@ -56,8 +56,8 @@ while keep_going == "":
     print("-" * 30)
     print()
 
-    print("The perimeter is: {} metres".format(perimeter))
-    print("The fencing cost is: ${}".format(cost))
+    print("The perimeter is: {:.2f} metres".format(perimeter))
+    print("The price of fencing is: ${:.2f}".format(cost_of_fencing))
     print()
 
     
